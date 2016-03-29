@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var boomLogo: UIImageView!
+    @IBOutlet weak var boomBackground: UIImageView!
+    @IBOutlet weak var uncoolButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showMenuAndHideMe(sender: AnyObject) {
+        boomBackground.hidden = false;
+        boomLogo.hidden = false;
+        uncoolButton.hidden = true;
+    }
 
 }
 
